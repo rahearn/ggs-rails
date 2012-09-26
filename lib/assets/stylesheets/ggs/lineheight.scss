@@ -1,0 +1,17 @@
+@function ggs-lineheight($multiplier) {
+  $base_em: $ggs-font-size * 1;
+  @return #{$ggs-line * $multiplier / $base_em}em;
+}
+
+@mixin ggs-margin-height($top_multiplier: 1, $bottom_multiplier: 0) {
+  @include ggs-margin-top($top_multiplier);
+  @include ggs-margin-bottom($bottom_multiplier);
+}
+
+@mixin ggs-margin-top($multiplier: 1) {
+  margin-top: ggs-lineheight($multiplier);
+}
+
+@mixin ggs-margin-bottom($multiplier: 1) {
+  margin-bottom: ggs-lineheight($multiplier);
+}

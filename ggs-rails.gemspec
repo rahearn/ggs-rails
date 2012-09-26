@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_runtime_dependency 'rails', '~> 3.2'
+  s.add_runtime_dependency 'sass-rails', '~> 3.2'
 
   s.add_development_dependency 'rake', '~> 0.9'
 end
