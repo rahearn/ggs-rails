@@ -1,0 +1,41 @@
+@mixin ggs-4-columns-max {
+  @media screen and (max-width: 45em) {
+    @content;
+  }
+}
+
+@mixin ggs-8-columns {
+  @media screen and (min-width: 45em) {
+    @content;
+  }
+}
+
+@mixin ggs-8-columns-max {
+  @media screen and (max-width: 117em) {
+    @content;
+  }
+}
+
+@mixin ggs-16-columns {
+  @media screen and (min-width: 117em) {
+    @content;
+  }
+}
+
+@mixin ggs-media-width($min-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin ggs-media-width-max($max-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin ggs-media-width-range($min-width, $max-width) {
+  @media screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
