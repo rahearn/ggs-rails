@@ -1,23 +1,23 @@
 @mixin ggs-4-columns-max {
-  @media screen and (max-width: 45em) {
+  @media screen and (max-width: $ggs-8-column-breakpoint) {
     @content;
   }
 }
 
 @mixin ggs-8-columns {
-  @media screen and (min-width: 45em) {
+  @media screen and (min-width: $ggs-8-column-breakpoint) {
     @content;
   }
 }
 
 @mixin ggs-8-columns-max {
-  @media screen and (max-width: 117em) {
+  @media screen and (max-width: $ggs-16-column-breakpoint) {
     @content;
   }
 }
 
 @mixin ggs-16-columns {
-  @media screen and (min-width: 117em) {
+  @media screen and (min-width: $ggs-16-column-breakpoint) {
     @content;
   }
 }
