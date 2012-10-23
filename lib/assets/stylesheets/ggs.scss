@@ -1,3 +1,7 @@
+$ggs-line: 24 !default;
+$ggs-font-size: 16 !default;
+$ggs-em: $ggs-font-size * 1 !default;
+
 @import "ggs/columns";
 @import "ggs/width";
 @import "ggs/lineheight";

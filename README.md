@@ -16,7 +16,13 @@ Add `ggs-rails` to the `:assets` group of your Rails application.
 Usage
 -----
 
-`ggs-rails` includes 2 main functions and 7 main mixins.
+### Variables ###
+
+These variables are set by default, you can override them before
+importing ggs.
+
+`$ggs-line`: Your base line-height. Defaults to 24
+`$ggs-font-size`: Your base font size. Defaults to 16
 
 ### Functions ###
 
@@ -26,10 +32,7 @@ represents the width of `$multiplier` columns on the page. Pass the
 that does not span the entire width of the browser window.
 
 `ggs-lineheight($multiplier)`: Returns an `em` value for `line-height`
-times `$multiplier`. You must set two variables before this will work:
-
-  * `$ggs-line` Your base line-height
-  * `$ggs-font-size` Your base font size
+times `$multiplier`.
 
 ### Mixins ###
 
