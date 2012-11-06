@@ -5,6 +5,7 @@ $ggs-em: $ggs-font-size * 1 !default;
 $ggs-8-column-breakpoint: 45em !default;
 $ggs-16-column-breakpoint: 117em !default;
 
+@import "ggs/wrapper";
 @import "ggs/columns";
 @import "ggs/width";
 @import "ggs/lineheight";
