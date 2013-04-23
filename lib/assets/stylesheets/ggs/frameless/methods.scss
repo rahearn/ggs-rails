@@ -1,0 +1,8 @@
+/* Functions for getting width of n columns */
+
+@function frameless-column($multiplier) {
+  @return ($multiplier * ($ggs-fr-column + $ggs-fr-gutter) - $ggs-fr-gutter) / $ggs-fr-em;}
+
+@mixin frameless-width($columns: 1) {
+  width: frameless-column($columns);
+}
