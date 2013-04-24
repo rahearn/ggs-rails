@@ -1,7 +1,7 @@
 
-@mixin ggs-wrapper($class-name: 'wrapper') {
-  .#{$class-name} {
-    padding: 0 #{($ggs-line/2)/$ggs-em}em;
+@mixin ggs-wrapper($selector: '.wrapper') {
+  #{$selector} {
+    padding: 0 ggs-lineheight(0.5);
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
