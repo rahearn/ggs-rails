@@ -13,6 +13,19 @@ Add `ggs-rails` to the `:assets` group of your Rails application.
       gem 'ggs-rails'
     end
 
+
+Upgrading
+---------
+
+Users of 0.x upgrading to 1.x should note that there were two breaking
+changes in this release.
+
+1. `@include ggs-wrapper` now expects a full css selector, not just a
+   class name. Previouse use of `@include ggs-wrapper('wrapper')` should
+   be updated to `@include ggs-wrapper('.wrapper')`
+1. `@include ggs-margin-height` now provides a single line of margin on
+   both the top and bottom of the element, not just on the top.
+
 Usage
 -----
 
@@ -51,7 +64,7 @@ proper percentage.
 `ggs-margin-left($num_columns: 1)` and `ggs-margin-right($num_columns:
 1)`. Self explanatory.
 
-`ggs-margin-height($top_multipler: 1, $bottom_multiplier: 0)`: Sets
+`ggs-margin-height($top_multipler: 1, $bottom_multiplier: 1)`: Sets
 `margin-top` and `margin-bottom` to the appropriate multplier of
 `line-height`
 
