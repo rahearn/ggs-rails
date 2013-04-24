@@ -1,0 +1,87 @@
+/*
+ * Full reset to zoom baseline grid for various sizes.
+ * As provided by base GGS distribution
+ */
+
+
+@include ggs-media-width(40em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: #{($ggs-font-size + 1) / $ggs-em}em;
+  }
+
+  h1 {
+    @include huge;
+    margin: (48/42*1em) 0 (24/42*1em);
+  }
+}
+
+
+/*
+*  Eight-column grid active
+*/
+
+@include ggs-8-columns {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: #{($ggs-font-size) / $ggs-em}em;
+  }
+}
+
+
+@include ggs-media-width(55.5em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: #{($ggs-font-size + 1) / $ggs-em}em;
+  }
+}
+
+
+@include ggs-media-width(61.5em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+    font-size: #{($ggs-font-size) / $ggs-em}em;
+  }
+}
+
+
+@include ggs-media-width(75em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: #{($ggs-font-size + 1) / $ggs-em}em;
+  }
+}
+
+
+@include ggs-media-width(87em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+    font-size: #{($ggs-font-size) / $ggs-em}em;
+  }
+}
+
+
+@include ggs-media-width(105em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: #{($ggs-font-size + 1) / $ggs-em}em;
+  }
+}
+
+
+/*
+*  Sixteen-column grid active
+*/
+
+/*@include ggs-16-column {*/
+/*}*/
+
+
+@include ggs-media-width(130em) {
+  body {
+    /* Zoom baseline grid to 18/16 = 1.125 */
+    font-size: #{($ggs-font-size + 2) / $ggs-em}em;
+    max-width: (2560/$ggs-em)em;
+  }
+}
+
