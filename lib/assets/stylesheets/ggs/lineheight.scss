@@ -2,7 +2,7 @@
   @return #{$ggs-line * $multiplier / $ggs-em}em;
 }
 
-@mixin ggs-margin-height($top_multiplier: 1, $bottom_multiplier: 0) {
+@mixin ggs-margin-height($top_multiplier: 1, $bottom_multiplier: 1) {
   @include ggs-margin-top($top_multiplier);
   @include ggs-margin-bottom($bottom_multiplier);
 }
