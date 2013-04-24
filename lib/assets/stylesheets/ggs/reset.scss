@@ -11,8 +11,8 @@
   }
 
   h1 {
-    @include huge;
-    margin: (48/42*1em) 0 (24/42*1em);
+    @include ggs-huge;
+    margin: ggs-lineheight($ggs-em*2/42) 0 ggs-lineheight($ggs-em/42);
   }
 }
 

@@ -1,0 +1,37 @@
+@mixin ggs-small {
+  /* 13px / 18px */
+  font-size: #{($ggs-font-size*0.8125) / $ggs-em}em;
+  line-height: ($ggs-line*0.75) / ($ggs-font-size*0.8125) * 1em;
+}
+
+@mixin ggs-normal {
+  /* 16px / 24px */
+  font-size: #{$ggs-font-size / $ggs-em}em;
+  line-height: #{$ggs-line / $ggs-em}em; /* 24 */
+}
+
+@mixin ggs-large {
+  /* 26 / 36px */
+  font-size: #{26 / $ggs-em}em;
+  line-height: ($ggs-line*1.5) / 26 * 1em;
+}
+
+@mixin ggs-huge {
+  /* 42px / 48px */
+  font-size: #{42 / $ggs-em}em;
+  line-height: ($ggs-line*2) / 42 * 1em;
+}
+
+@mixin ggs-massive {
+  /* 68px / 72px */
+  font-size: #{68 / $ggs-em}em;
+  line-height: ($ggs-line*3) / 68 * 1em;
+}
+
+@mixin ggs-gigantic {
+  /* 110px / 120px */
+  font-size: #{110 / $ggs-em}em;
+  line-height: ($ggs-line*5) / 110 * 1em;
+}
+
+
