@@ -7,7 +7,9 @@ implementation of the [Golden Grid System](http://goldengridsystem.com/).
 Installation
 ------------
 
-Add `ggs-rails` to the `:assets` group of your Rails application.
+### Gemfile ###
+
+Add `ggs-rails` to the `:assets` group of your application.
 
     group :assets do
       gem 'ggs-rails'
