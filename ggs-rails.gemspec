@@ -18,10 +18,10 @@ Gem::Specification.new do |s|
 
   s.post_install_message = "\nHEADS UP! ggs-rails 1.0 has many improvements, but has 2 important breaking changes. Please see the Upgrading note at https://github.com/rahearn/ggs-rails/blob/master/README.md for full information.\n\n"
 
-  s.required_rubygems_version = '>= 1.3.6'
+  s.required_rubygems_version = '>= 3.1'
 
   s.add_runtime_dependency 'sass',  '~> 3.2'
 
-  s.add_development_dependency 'rake',    '~> 0.9'
-  s.add_development_dependency 'bundler', '~> 1.2'
+  s.add_development_dependency 'rake',    '>= 12.3.3'
+  s.add_development_dependency 'bundler', '~> 2.1'
 end
